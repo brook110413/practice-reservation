@@ -4,3 +4,268 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+<!-- 首頁banner -->
+<section class="indexBanner bg-h320 bg-cover mb-15">
+  <div class="indexBanner__mask h-100 w-100 d-flex justify-content-center align-items-center">
+    <h2 class="display-4 text-white font-weight-bold">Discover your ideal hotel</h2>
+  </div>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-10">
+        <div class="indexMenu bg-secondary p-3 rounded d-flex justify-content-center">
+          <input type="text" class="input-h56 input-w232 mr-2">
+          <input type="text" class="input-h56 input-w232 mr-2">
+          <input type="text" class="input-h56 input-w232 mr-2">
+          <input type="button" value="SEARCH" class="btn btn-primary btn-h56 px-4">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h3 class="h2 font-weight-bold mb-3">Top Choices</h3>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item mr-2">
+        <a class="nav-link px-3 py-0" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+          aria-controls="pills-home" aria-selected="true">
+          <h4 class="font-weight-bold">Bali1<sup>128</sup></h4>
+        </a>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="nav-link px-3 py-0" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+          aria-controls="pills-profile" aria-selected="false">
+          <h4 class="font-weight-bold">Okinawa<sup>67</h4></sup>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-3 py-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+          aria-controls="pills-contact" aria-selected="false">
+          <h4 class="font-weight-bold">Taipei<sup>53</h4></sup>
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/top1.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Hotel Aqua</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">5.0</span>
+                <small class="text-lighter">・2k reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 2,480</span>
+                <small class="text-lighter"><del>TWD 3,980</del></small>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/top2.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Mr. Kawasaki Inn</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">4.0</span>
+                <small class="text-lighter">・500 reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 3,380</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/top3.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Weekly Paradise</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">4.0</span>
+                <small class="text-lighter">・470 reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 4,780</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/top4.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Beast Hotel</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">4.0</span>
+                <small class="text-lighter">・283 reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 1,980</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/top1.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Hotel Aqua</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">5.0</span>
+                <small class="text-lighter">・2k reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 2,480</span>
+                <small class="text-lighter"><del>TWD 3,980</del></small>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/top2.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Mr. Kawasaki Inn</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">4.0</span>
+                <small class="text-lighter">・500 reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 3,380</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/top3.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Weekly Paradise</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">4.0</span>
+                <small class="text-lighter">・470 reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 4,780</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/top4.jpg" class="mb-1">
+              <p class="font-weight-bold mb-1">Beast Hotel</p>
+              <div class="grade d-flex align-items-center mb-1">
+                <div class="d-flex align-items-center mr-1">
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                  <span class="material-icons md-18">
+                    grade
+                  </span>
+                </div>
+                <span class="text-light">4.0</span>
+                <small class="text-lighter">・283 reviews</small>
+              </div>
+              <div class="price">
+                <span class="text-light mr-1">TWD 1,980</span>
+              </div>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+    </div>
+  </div>
+</section>

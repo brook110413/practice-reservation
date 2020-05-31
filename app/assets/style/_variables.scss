@@ -73,6 +73,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: #00000099;
+$lighter: #00000061;
 $dark: #121212;
 
 $theme-colors: () !default;
@@ -86,6 +87,7 @@ $theme-colors: map-merge(
     "warning": $warning,
     "danger": $danger,
     "light": $light,
+    "lighter": $lighter,
     "dark": $dark,
   ),
   $theme-colors
@@ -164,6 +166,24 @@ $spacers: map-merge(
     ),
     9: (
       72px,
+    ),
+    10: (
+      80px,
+    ),
+    11: (
+      88px,
+    ),
+    12: (
+      96px,
+    ),
+    13: (
+      104px,
+    ),
+    14: (
+      112px,
+    ),
+    15: (
+      120px,
     ),
   ),
   $spacers
@@ -322,9 +342,9 @@ $headings-line-height: 1.2 !default;
 $headings-color: null !default;
 
 $display1-size: 6rem !default;
-$display2-size: 5.5rem !default;
-$display3-size: 4.5rem !default;
-$display4-size: 3.5rem !default;
+$display2-size: 4.5rem !default;
+$display3-size: 3.5rem !default;
+$display4-size: 3rem !default;
 
 $display1-weight: 300 !default;
 $display2-weight: 300 !default;
