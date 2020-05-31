@@ -6,20 +6,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <!-- materialIcon.css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
+  <header>
+    <div class="container">
+      <div class=" d-flex justify-content-between align-items-center py-3">
+        <!-- logo -->
+        <a href="index.html">
+          <h1 class="text-uppercase h4">aloha</h1>
+        </a>
+        <!-- header 選單 -->
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0" data-toggle="dropdown" href="#"
+              role="button" aria-haspopup="true" aria-expanded="false"><span class="material-icons">
+                language
+              </span></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">French</a>
+              <a class="dropdown-item" href="#">Spanish</a>
+              <a class="dropdown-item" href="#">Chinese</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark p-0 ml-lg-6" href="#">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark p-0 ml-lg-6" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <%- contents %>
-
-  <footer class="footer">
-    footer
+  <!-- footer banner 區塊 -->
+  <section class="bg-secondary">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center justify-content-center bg-h320">
+        <h2 class="display-4 mb-3 font-weight-bold">Subscribe for Exclusive Offer</h2>
+        <div class="input-group w-50">
+          <input type="email" class="form-control input-h56" placeholder="Your email address"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary btn-h56 font-weight-bold px-4" type="button"
+              id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer menu -->
+  <footer>
+    <div class="container">
+      <div class="d-flex align-items-center py-3">
+        <p class="text-light mr-8">© 2020 ALOHA, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex mr-auto">
+          <li><a href="#" class="text-light mr-3">FAQs</a></li>
+          <li><a href="#" class="text-light mr-3">Terms of use</a></li>
+          <li><a href="#" class="text-light">Privacy policy</a></li>
+        </ul>
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 mr-3" data-toggle="dropdown"
+              href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="material-icons">
+                language
+              </span>English</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">French</a>
+              <a class="dropdown-item" href="#">Japanese</a>
+              <a class="dropdown-item" href="#">Chinese</a>
+            </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0" data-toggle="dropdown" href="#"
+              role="button" aria-haspopup="true" aria-expanded="false"><span class="material-icons">
+                attach_money
+              </span>TWD</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">USD</a>
+              <a class="dropdown-item" href="#">EUR</a>
+              <a class="dropdown-item" href="#">JPY</a>
+              <a class="dropdown-item" href="#">TWD</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
+  <!-- bootstrap 4.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
   <script src="./assets/js/all.js"></script>
 </body>
 
