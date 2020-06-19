@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <!-- materialIcon.css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- swiper.css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="fixed-top bg-white">
+    <div class="container">
+      <nav class="navbar navbar-expand-md px-0 py-3 py-md-4">
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons md-18">
+            menu
+          </span>
+        </button>
+        <!-- logo -->
+        <a class="logo  " href="index.html">
+          <h1 class="text-hide">aloha</h1>
+        </a>
+        <!-- login -->
+        <a class="text-dark p-0 ml-md-7 order-md-last" href="#">Login</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <!-- header 選單 -->
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 border-bottom-0"
+                data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span
+                  class="material-icons">
+                  language
+                </span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">French</a>
+                <a class="dropdown-item" href="#">Spanish</a>
+                <a class="dropdown-item" href="#">Chinese</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark p-0 ml-7" href="#">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="bg-secondary py-3 py-lg-4">
+      <div class="container">
+        <div class="d-flex">
+          <select name="" class="input-h56 mr-lg-3 mr-md-2 border-0 rounded w-100">
+          </select>
+          <input type="text" class="input-h56 mr-lg-3 mr-md-2 border-0 rounded w-100">
+          <input type="text" class="input-h56 mr-lg-3 mr-md-2 border-0 rounded w-100">
+          <a class="btn btn-primary font-weight-bold btn-h56 px-5 d-none d-md-flex align-items-center"
+            href="result.html" role="button">SEARCH</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <%- contents %>
+  <!-- footer banner 區塊 -->
+  <section class="bg-secondary py-4">
+    <div class="container">
+      <div class="row align-items-center flex-column flex-md-row">
+        <div class="col-12 col-md-4 col-lg-5">
+          <h2 class="h4 lg-h2 font-weight-bold text-center text-md-left mb-3 mb-md-0">Subscribe for Exclusive Offer</h2>
+        </div>
+        <div class="col-12 col-md-8 col-lg-7">
+          <div class="input-group">
+            <input type="email" class="form-control input-h56" placeholder="Your email address"
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary btn-h56 font-weight-bold px-5" type="button"
+                id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer menu -->
+  <footer>
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center py-4">
+        <p class="text-light mr-lg-9 mr-md-auto order-2 order-md-first">© 2020 ALOHA, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex mr-lg-auto mb-3 mb-md-0">
+          <li><a href="#" class="text-light mr-4">FAQs</a></li>
+          <li><a href="#" class="text-light mr-4">Terms of use</a></li>
+          <li><a href="#" class="text-light">Privacy policy</a></li>
+        </ul>
+        <ul class="nav nav-pills d-none d-lg-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 mr-4 border-bottom-0"
+              data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span
+                class="material-icons">
+                language
+              </span>English</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">French</a>
+              <a class="dropdown-item" href="#">Japanese</a>
+              <a class="dropdown-item" href="#">Chinese</a>
+            </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 border-bottom-0"
+              data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span
+                class="material-icons">
+                attach_money
+              </span>TWD</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">USD</a>
+              <a class="dropdown-item" href="#">EUR</a>
+              <a class="dropdown-item" href="#">JPY</a>
+              <a class="dropdown-item" href="#">TWD</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <!-- bootstrap 4.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <!-- swiper.js -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

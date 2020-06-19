@@ -1,0 +1,71 @@
+.indexBanner {
+  background-image: url(../images/index-banner.jpg);
+}
+.searchMenu {
+  transform: translateY(-25%);
+  @media (min-width: 768px) {
+    transform: translateY(-25%);
+  }
+  @media (min-width: 992px) {
+    transform: translateY(-50%);
+  }
+}
+
+.topChoices {
+  .swiper-container,
+  sup {
+    z-index: -1;
+  }
+  .nav-link {
+    color: $light;
+    border-bottom: 2px solid #ffffff;
+    &:hover,
+    &:focus {
+      color: $primary;
+      border-bottom: 2px solid;
+      border-radius: 0;
+    }
+  }
+  img {
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    max-height: 164px;
+    @media (min-width: 768px) {
+      max-height: 185px;
+    }
+    @media (min-width: 992px) {
+      height: 175px;
+    }
+  }
+}
+// Popular Destinations 背景圖
+.bg-1 {
+  background-image: url(../images/Osaka.jpg);
+}
+.bg-2 {
+  background-image: url(../images/Kyoto.jpg);
+}
+.bg-3 {
+  background-image: url(../images/Reykjavic.jpg);
+}
+.bg-4 {
+  background-image: url(../images/Paris.jpg);
+}
+.bg-5 {
+  background-image: url(../images/Roman.jpg);
+}
+.bg-6 {
+  background-image: url(../images/Bangkok.jpg);
+}
+
+.getInspiration img {
+  object-fit: cover;
+  height: 181px;
+  @media (min-width: 768px) {
+    max-height: 158px;
+  }
+  @media (min-width: 992px) {
+    max-height: 263px;
+  }
+}

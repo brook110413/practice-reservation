@@ -1,47 +1,155 @@
 ---
 title: 首頁
-layout: ./app/layout.ejs
+layout: ./app/index-layout.ejs
 engine: ejs
 current: index
 ---
-<!-- 首頁banner -->
-<section class="indexBanner bg-h320 bg-cover mb-15">
-  <div class="indexBanner__mask h-100 w-100 d-flex justify-content-center align-items-center">
-    <h2 class="display-4 text-white font-weight-bold">Discover your ideal hotel</h2>
+<!-- 首頁 banner -->
+<section class="indexBanner bg-mask bg-h320 bg-cover mb-lg-16 mb-37 mt-8 mt-md-10">
+  <div class="bg-mask h-100 w-100">
+    <div class="container h-100">
+      <div class="row d-flex h-100 justify-content-center align-items-center">
+        <div class="col-lg-10">
+          <h2
+            class="display-4 display-md-2 text-center text-white font-weight-bold d-flex align-items-center justify-content-between w-100">
+            <span class="material-icons md-48">
+              chevron_left
+            </span>
+            Discover your<br class="d-lg-none">ideal hotel
+            <span class="material-icons md-48">
+              chevron_right
+            </span>
+          </h2>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row d-flex justify-content-center">
-      <div class="col-10">
-        <div class="indexMenu bg-secondary p-3 rounded d-flex justify-content-center">
-          <input type="text" class="input-h56 input-w232 mr-2">
-          <input type="text" class="input-h56 input-w232 mr-2">
-          <input type="text" class="input-h56 input-w232 mr-2">
-          <input type="button" value="SEARCH" class="btn btn-primary btn-h56 px-4">
+      <div class="col-12 col-md-10">
+        <!-- search 選單 -->
+        <div class="searchMenu bg-secondary p-4 rounded-lg d-flex flex-lg-row flex-column justify-content-lg-center">
+          <div class="dropdown mr-lg-3 mb-3 mb-lg-0 border-0 rounded w-100">
+            <a class="btn bg-white btn-h56 w-100 d-flex align-items-center p-3" href="#" role="button"
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="material-icons mr-3">
+                place
+              </span>
+              <span class="text-light">
+                Destination
+              </span>
+            </a>
+
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item d-flex p-0" href="#">
+                <span class="material-icons ml-3 mr-2">
+                  star
+                </span>
+                <div>
+                  <p>BangKok</p>
+                  <small class="text-light">Thailand</small>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex p-0" href="#">
+                <span class="material-icons ml-3 mr-2">
+                  star
+                </span>
+                <div>
+                  <p>Osaka</p>
+                  <small class="text-light">Japan</small>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex p-0" href="#">
+                <span class="material-icons ml-3 mr-2">
+                  star
+                </span>
+                <div>
+                  <p>Roma</p>
+                  <small class="text-light">Italy</small>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex p-0" href="#">
+                <span class="material-icons ml-3 mr-2">
+                  star
+                </span>
+                <div>
+                  <p>Paris</p>
+                  <small class="text-light">London</small>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex p-0" href="#">
+                <span class="material-icons ml-3 mr-2">
+                  star
+                </span>
+                <div>
+                  <p>Beykjavik</p>
+                  <small class="text-light">Iceland</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="dropdown mr-lg-3 mb-3 mb-lg-0 border-0 rounded w-100">
+            <a class="btn bg-white btn-h56 w-100 d-flex align-items-center p-3" href="#" role="button"
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="material-icons mr-3">
+                date_range
+              </span>
+              <span class="text-light">
+                Check-in / Check-out
+              </span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="dropdown mr-lg-3 mb-3 mb-lg-0 border-0 rounded w-100">
+            <a class="btn bg-white btn-h56 w-100 d-flex align-items-center p-3" href="#" role="button"
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="material-icons mr-3">
+                person
+              </span>
+              <span class="text-light">
+                Guests
+              </span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <a class="btn btn-primary font-weight-bold btn-h56 px-5 d-flex align-items-center" href="result.html"
+            role="button">SEARCH</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section>
+<!-- Top Choices 區域 -->
+<section class="topChoices mb-lg-10 mb-7">
   <div class="container">
-    <h3 class="h2 font-weight-bold mb-3">Top Choices</h3>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item mr-2">
-        <a class="nav-link px-3 py-0" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-          aria-controls="pills-home" aria-selected="true">
-          <h4 class="font-weight-bold">Bali1<sup>128</sup></h4>
+    <h3 class="h4 md-h2 font-weight-bold mb-4">Top Choices</h3>
+    <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+      <li class="nav-item mr-md-3">
+        <a class="nav-link active px-3 px-md-4 py-0" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+          role="tab" aria-controls="pills-home" aria-selected="true">
+          <h4 class="h5 md-h4 font-weight-bold">Bali<sup>128</sup></h4>
         </a>
       </li>
-      <li class="nav-item mr-2">
-        <a class="nav-link px-3 py-0" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+      <li class="nav-item mr-md-3">
+        <a class="nav-link px-3 px-md-4 py-0" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
           aria-controls="pills-profile" aria-selected="false">
-          <h4 class="font-weight-bold">Okinawa<sup>67</h4></sup>
+          <h4 class="h5 md-h4 font-weight-bold">Okinawa<sup>67</sup></h4>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-3 py-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+        <a class="nav-link px-3 px-md-4 py-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
           aria-controls="pills-contact" aria-selected="false">
-          <h4 class="font-weight-bold">Taipei<sup>53</h4></sup>
+          <h4 class="h5 md-h4 font-weight-bold">Taipei<sup>53</sup></h4>
         </a>
       </li>
     </ul>
@@ -51,10 +159,10 @@ current: index
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/images/top1.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Hotel Aqua</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top1.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Hotel Aqua</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -75,15 +183,15 @@ current: index
                 <small class="text-lighter">・2k reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 2,480</span>
+                <span class="text-light mr-2">TWD 2,480</span>
                 <small class="text-lighter"><del>TWD 3,980</del></small>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/top2.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Mr. Kawasaki Inn</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top2.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Mr. Kawasaki Inn</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -101,14 +209,14 @@ current: index
                 <small class="text-lighter">・500 reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 3,380</span>
+                <span class="text-light mr-2">TWD 3,380</span>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/top3.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Weekly Paradise</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top3.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Weekly Paradise</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -126,14 +234,14 @@ current: index
                 <small class="text-lighter">・470 reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 4,780</span>
+                <span class="text-light mr-2">TWD 4,780</span>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/top4.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Beast Hotel</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top4.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Beast Hotel</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -151,14 +259,14 @@ current: index
                 <small class="text-lighter">・283 reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 1,980</span>
+                <span class="text-light mr-2">TWD 1,980</span>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/top1.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Hotel Aqua</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top1.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Hotel Aqua</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -179,15 +287,15 @@ current: index
                 <small class="text-lighter">・2k reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 2,480</span>
+                <span class="text-light mr-2">TWD 2,480</span>
                 <small class="text-lighter"><del>TWD 3,980</del></small>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/top2.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Mr. Kawasaki Inn</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top2.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Mr. Kawasaki Inn</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -205,14 +313,14 @@ current: index
                 <small class="text-lighter">・500 reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 3,380</span>
+                <span class="text-light mr-2">TWD 3,380</span>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/top3.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Weekly Paradise</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top3.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Weekly Paradise</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -230,14 +338,14 @@ current: index
                 <small class="text-lighter">・470 reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 4,780</span>
+                <span class="text-light mr-2">TWD 4,780</span>
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/top4.jpg" class="mb-1">
-              <p class="font-weight-bold mb-1">Beast Hotel</p>
-              <div class="grade d-flex align-items-center mb-1">
-                <div class="d-flex align-items-center mr-1">
+              <img src="assets/images/top4.jpg" class="mb-2">
+              <p class="font-weight-bold mb-2">Beast Hotel</p>
+              <div class="grade d-flex align-items-center mb-2">
+                <div class="d-flex align-items-center mr-2">
                   <span class="material-icons md-18">
                     grade
                   </span>
@@ -255,7 +363,7 @@ current: index
                 <small class="text-lighter">・283 reviews</small>
               </div>
               <div class="price">
-                <span class="text-light mr-1">TWD 1,980</span>
+                <span class="text-light mr-2">TWD 1,980</span>
               </div>
             </div>
           </div>
@@ -266,6 +374,142 @@ current: index
       </div>
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+    </div>
+  </div>
+</section>
+<!-- Popular Destinations 區域 -->
+<section class="popularDestinations mb-lg-10 mb-7">
+  <div class="container">
+    <div>
+      <h3 class="h4 md-h2 font-weight-bold mb-4">Popular Destinations</h3>
+      <div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-2 mb-md-4">
+            <a class="btn bg-1 bg-cover w-100 bg-h78 p-0 rounded-lg" href="#">
+              <div class="bg-mask w-100 h-100 d-flex align-items-center justify-content-between px-4 py-3 rounded-lg">
+                <div class="text-left">
+                  <small class="text-lightest font-weight-bold">JAPAN</small>
+                  <h4 class="text-white font-weight-bold">Osaka</h4>
+                </div>
+                <span class="material-icons text-white">
+                  expand_more
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2 mb-md-4">
+            <a class="btn bg-2 bg-cover w-100 bg-h78 p-0 rounded-lg" href="#">
+              <div class="bg-mask w-100 h-100 d-flex align-items-center justify-content-between px-4 py-3 rounded-lg">
+                <div class="text-left">
+                  <small class="text-lightest font-weight-bold">JAPAN</small>
+                  <h4 class="text-white font-weight-bold">Kyoto</h4>
+                </div>
+                <span class="material-icons text-white">
+                  expand_more
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2 mb-md-4">
+            <a class="btn bg-3 bg-cover w-100 bg-h78 p-0 rounded-lg" href="#">
+              <div class="bg-mask w-100 h-100 d-flex align-items-center justify-content-between px-4 py-3 rounded-lg">
+                <div class="text-left">
+                  <small class="text-lightest font-weight-bold">iceland</small>
+                  <h4 class="text-white font-weight-bold">Reykjavík</h4>
+                </div>
+                <span class="material-icons text-white">
+                  expand_more
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2 mb-md-0">
+            <a class="btn bg-4 bg-cover w-100 bg-h78 p-0 rounded-lg" href="#">
+              <div class="bg-mask w-100 h-100 d-flex align-items-center justify-content-between px-4 py-3 rounded-lg">
+                <div class="text-left">
+                  <small class="text-lightest font-weight-bold">London</small>
+                  <h4 class="text-white font-weight-bold">Paris</h4>
+                </div>
+                <span class="material-icons text-white">
+                  expand_more
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2 mb-md-0">
+            <a class="btn bg-5 bg-cover w-100 bg-h78 p-0 rounded-lg" href="#">
+              <div class="bg-mask w-100 h-100 d-flex align-items-center justify-content-between px-4 py-3 rounded-lg">
+                <div class="text-left">
+                  <small class="text-lightest font-weight-bold">Italy</small>
+                  <h4 class="text-white font-weight-bold">Roma</h4>
+                </div>
+                <span class="material-icons text-white">
+                  expand_more
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2 mb-md-0">
+            <a class="btn bg-6 bg-cover w-100 bg-h78 p-0 rounded-lg" href="#">
+              <div class="bg-mask w-100 h-100 d-flex align-items-center justify-content-between px-4 py-3 rounded-lg">
+                <div class="text-left">
+                  <small class="text-lightest font-weight-bold">Thailand</small>
+                  <h4 class="text-white font-weight-bold">Bangkok</h4>
+                </div>
+                <span class="material-icons text-white">
+                  expand_more
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Get Inspiration 區域 -->
+<section class="getInspiration mb-lg-10 mb-7">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="h4 md-h2 font-weight-bold">Get Inspiration</h3>
+      <a class="btn btn-outline-primary font-weight-bold" href="#" role="button">see more</a>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="assets/images/italy.jpg" class="card-img-top rounded-lg mb-4" alt="...">
+            <div class="card-body p-0">
+              <h4 class="card-title h5 md-h4 font-weight-bold mb-2">The fifth most visited country</h4>
+              <p class="card-text text-light">Italy is the fifth most visited country in the world, with a total of
+                52.3
+                million…</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="assets/images/Thailand.jpg" class="card-img-top rounded-lg mb-4" alt="...">
+            <div class="card-body p-0">
+              <h4 class="card-title h5 md-h4 font-weight-bold mb-2">Visit Thailand for Bangkok</h4>
+              <p class="card-text text-light">Asian tourists primarily visit Thailand for Bangkok and the historical,
+                natural, and…</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="assets/images/NewZealand.jpg" class="card-img-top rounded-lg mb-4" alt="...">
+            <div class="card-body p-0">
+              <h4 class="card-title h5 md-h4 font-weight-bold mb-2">Lord of the Rings Tour</h4>
+              <p class="card-text text-light">The national cuisine has been described as Pacific Rim,
+                incorporating the<span class="d-lg-none">...</span>
+                <span class="d-none d-lg-inline">native Māori…</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

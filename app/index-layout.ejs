@@ -14,36 +14,44 @@
 </head>
 
 <body>
-  <header>
+  <header class="fixed-top bg-white">
     <div class="container">
-      <div class=" d-flex justify-content-between align-items-center py-3">
+      <nav class="navbar navbar-expand-md px-0 py-3 py-md-4">
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons md-18">
+            menu
+          </span>
+        </button>
         <!-- logo -->
-        <a href="index.html" class="logo">
+        <a class="logo  " href="index.html">
           <h1 class="text-hide">aloha</h1>
         </a>
-        <!-- header 選單 -->
-        <ul class="nav nav-pills">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 border-bottom-0"
-              data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span
-                class="material-icons">
-                language
-              </span></a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">French</a>
-              <a class="dropdown-item" href="#">Spanish</a>
-              <a class="dropdown-item" href="#">Chinese</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark p-0 ml-lg-6" href="#">Sign up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark p-0 ml-lg-6" href="#">Login</a>
-          </li>
-        </ul>
-      </div>
+        <!-- login -->
+        <a class="text-dark p-0 ml-md-7 order-md-last" href="#">Login</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <!-- header 選單 -->
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 border-bottom-0"
+                data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span
+                  class="material-icons">
+                  language
+                </span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">French</a>
+                <a class="dropdown-item" href="#">Spanish</a>
+                <a class="dropdown-item" href="#">Chinese</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark p-0 ml-7" href="#">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -51,14 +59,18 @@
   <!-- footer banner 區塊 -->
   <section class="bg-secondary">
     <div class="container">
-      <div class="d-flex flex-column align-items-center justify-content-center bg-h320">
-        <h2 class="display-4 mb-3 font-weight-bold">Subscribe for Exclusive Offer</h2>
-        <div class="input-group w-50">
-          <input type="email" class="form-control input-h56" placeholder="Your email address"
-            aria-label="Recipient's username" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-primary btn-h56 font-weight-bold px-4" type="button"
-              id="button-addon2">Subscribe</button>
+      <div class="d-flex flex-column align-items-center justify-content-center bg-h320 bg-h-auto py-4 p-md-0">
+        <h2 class="h4 display-md-2 mb-3 mb-md-4 font-weight-bold">Subscribe for Exclusive Offer</h2>
+        <div class="row w-100 d-flex justify-content-center">
+          <div class="col-lg-6 col-md-10">
+            <div class="input-group">
+              <input type="email" class="form-control input-h56" placeholder="Your email address"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary btn-h56 font-weight-bold px-5" type="button"
+                  id="button-addon2">Subscribe</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -67,16 +79,16 @@
   <!-- footer menu -->
   <footer>
     <div class="container">
-      <div class="d-flex align-items-center py-3">
-        <p class="text-light mr-8">© 2020 ALOHA, Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex mr-auto">
-          <li><a href="#" class="text-light mr-3">FAQs</a></li>
-          <li><a href="#" class="text-light mr-3">Terms of use</a></li>
+      <div class="d-flex flex-column flex-md-row align-items-center py-4">
+        <p class="text-light mr-lg-9 mr-md-auto order-2 order-md-first">© 2020 ALOHA, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex mr-lg-auto mb-3 mb-md-0">
+          <li><a href="#" class="text-light mr-4">FAQs</a></li>
+          <li><a href="#" class="text-light mr-4">Terms of use</a></li>
           <li><a href="#" class="text-light">Privacy policy</a></li>
         </ul>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills d-none d-lg-flex">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 mr-3 border-bottom-0"
+            <a class="nav-link dropdown-toggle d-flex align-items-center text-dark p-0 mr-4 border-bottom-0"
               data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span
                 class="material-icons">
                 language

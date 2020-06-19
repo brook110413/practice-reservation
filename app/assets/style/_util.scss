@@ -1,16 +1,92 @@
 .input-h56 {
   height: 56px;
 }
-.input-w232 {
-  width: 232px;
+.btn-h54 {
+  height: 54px;
 }
 .btn-h56 {
   height: 56px;
 }
+.bg-w213 {
+  width: 213px;
+}
+.bg-w635 {
+  width: 635px;
+}
+.bg-h78 {
+  height: 78px;
+}
+.bg-h100 {
+  height: 100px;
+}
 .bg-h320 {
   height: 320px;
+}
+.bg-h151 {
+  height: 151px;
+}
+.bg-h213 {
+  height: 213px;
+}
+.bg-h434 {
+  height: 434px;
+}
+.bg-h-auto {
+  height: auto;
+  @media (min-width: 768px) {
+    height: 320px;
+  }
 }
 .bg-cover {
   background-size: cover;
   background-position: center center;
+}
+
+.bg-mask {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.img-cover {
+  object-fit: cover;
+}
+
+.display-md-2 {
+  @media (min-width: 768px) {
+    font-size: $display2-size;
+  }
+}
+.md-h2 {
+  @media (min-width: 768px) {
+    font-size: $h2-font-size;
+  }
+}
+.lg-h2 {
+  @media (min-width: 992px) {
+    font-size: $h2-font-size;
+  }
+}
+.md-h4 {
+  @media (min-width: 768px) {
+    font-size: $h4-font-size;
+  }
+}
+.lg-h4 {
+  @media (min-width: 992px) {
+    font-size: $h4-font-size;
+  }
+}
+.rounded-lg-left {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.fz-12 {
+  font-size: 12px;
+}
+.fz-14 {
+  font-size: 14px;
+}
+.fz-md-14 {
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }

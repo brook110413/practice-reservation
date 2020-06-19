@@ -1,0 +1,13 @@
+.selectYourRoom hr {
+  color: #000;
+}
+
+.selectYourRoom {
+  .media-body {
+    position: relative;
+    height: 150px;
+    @media (min-width: 992px) {
+      height: 175px;
+    }
+  }
+}
